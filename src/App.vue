@@ -31,7 +31,7 @@ export default {
     // promises
 
     async fetchBooks(){
-      const resposeData = await fetch('http://localhost:5958/api')
+      const resposeData = await fetch('https://sowmya-web-backend.herokuapp.com/api')
       const res = await resposeData.json()
       console.log( res )
       return res.data;
